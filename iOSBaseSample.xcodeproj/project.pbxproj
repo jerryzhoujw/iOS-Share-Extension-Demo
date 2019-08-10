@@ -13,8 +13,35 @@
 		5370F6D722FEC42A009CB7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5370F6D622FEC42A009CB7A6 /* Assets.xcassets */; };
 		5370F6DA22FEC42A009CB7A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5370F6D822FEC42A009CB7A6 /* LaunchScreen.storyboard */; };
 		5370F6DD22FEC42A009CB7A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5370F6DC22FEC42A009CB7A6 /* main.m */; };
+		5370F6EB22FEC6C9009CB7A6 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5370F6EA22FEC6C9009CB7A6 /* ShareViewController.m */; };
+		5370F6EE22FEC6C9009CB7A6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5370F6EC22FEC6C9009CB7A6 /* MainInterface.storyboard */; };
+		5370F6F222FEC6C9009CB7A6 /* Share Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5370F6E722FEC6C9009CB7A6 /* Share Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D104DB8523CA8935DAB4BB44 /* Pods_iOSBaseSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4ED2A0098671605DF67130 /* Pods_iOSBaseSample.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5370F6F022FEC6C9009CB7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5370F6C222FEC429009CB7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5370F6E622FEC6C9009CB7A6;
+			remoteInfo = "Share Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5370F6F622FEC6C9009CB7A6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5370F6F222FEC6C9009CB7A6 /* Share Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5370F6CA22FEC429009CB7A6 /* iOSBaseSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBaseSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,6 +54,11 @@
 		5370F6D922FEC42A009CB7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5370F6DB22FEC42A009CB7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5370F6DC22FEC42A009CB7A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5370F6E722FEC6C9009CB7A6 /* Share Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Share Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5370F6E922FEC6C9009CB7A6 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		5370F6EA22FEC6C9009CB7A6 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		5370F6ED22FEC6C9009CB7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5370F6EF22FEC6C9009CB7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1ED199B6E44E17D766CF1BA /* Pods-iOSBaseSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBaseSample.debug.xcconfig"; path = "Target Support Files/Pods-iOSBaseSample/Pods-iOSBaseSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B560E4DFB0223721ADDFAA61 /* Pods-iOSBaseSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBaseSample.release.xcconfig"; path = "Target Support Files/Pods-iOSBaseSample/Pods-iOSBaseSample.release.xcconfig"; sourceTree = "<group>"; };
 		DF4ED2A0098671605DF67130 /* Pods_iOSBaseSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSBaseSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +70,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D104DB8523CA8935DAB4BB44 /* Pods_iOSBaseSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5370F6E422FEC6C9009CB7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				5370F6CC22FEC429009CB7A6 /* iOSBaseSample */,
+				5370F6E822FEC6C9009CB7A6 /* Share Extension */,
 				5370F6CB22FEC429009CB7A6 /* Products */,
 				ACF40939B35B89D09276CFF2 /* Pods */,
 				452192C493F49E847E1AB797 /* Frameworks */,
@@ -66,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				5370F6CA22FEC429009CB7A6 /* iOSBaseSample.app */,
+				5370F6E722FEC6C9009CB7A6 /* Share Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +125,17 @@
 				5370F6DC22FEC42A009CB7A6 /* main.m */,
 			);
 			path = iOSBaseSample;
+			sourceTree = "<group>";
+		};
+		5370F6E822FEC6C9009CB7A6 /* Share Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5370F6E922FEC6C9009CB7A6 /* ShareViewController.h */,
+				5370F6EA22FEC6C9009CB7A6 /* ShareViewController.m */,
+				5370F6EC22FEC6C9009CB7A6 /* MainInterface.storyboard */,
+				5370F6EF22FEC6C9009CB7A6 /* Info.plist */,
+			);
+			path = "Share Extension";
 			sourceTree = "<group>";
 		};
 		ACF40939B35B89D09276CFF2 /* Pods */ = {
@@ -107,15 +159,34 @@
 				5370F6C722FEC429009CB7A6 /* Frameworks */,
 				5370F6C822FEC429009CB7A6 /* Resources */,
 				AD7E0F13378A21F7E3B73182 /* [CP] Embed Pods Frameworks */,
+				5370F6F622FEC6C9009CB7A6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5370F6F122FEC6C9009CB7A6 /* PBXTargetDependency */,
 			);
 			name = iOSBaseSample;
 			productName = iOSBaseSample;
 			productReference = 5370F6CA22FEC429009CB7A6 /* iOSBaseSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5370F6E622FEC6C9009CB7A6 /* Share Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5370F6F322FEC6C9009CB7A6 /* Build configuration list for PBXNativeTarget "Share Extension" */;
+			buildPhases = (
+				5370F6E322FEC6C9009CB7A6 /* Sources */,
+				5370F6E422FEC6C9009CB7A6 /* Frameworks */,
+				5370F6E522FEC6C9009CB7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Share Extension";
+			productName = "Share Extension";
+			productReference = 5370F6E722FEC6C9009CB7A6 /* Share Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,6 +198,9 @@
 				ORGANIZATIONNAME = test;
 				TargetAttributes = {
 					5370F6C922FEC429009CB7A6 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					5370F6E622FEC6C9009CB7A6 = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
@@ -145,6 +219,7 @@
 			projectRoot = "";
 			targets = (
 				5370F6C922FEC429009CB7A6 /* iOSBaseSample */,
+				5370F6E622FEC6C9009CB7A6 /* Share Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +232,14 @@
 				5370F6DA22FEC42A009CB7A6 /* LaunchScreen.storyboard in Resources */,
 				5370F6D722FEC42A009CB7A6 /* Assets.xcassets in Resources */,
 				5370F6D522FEC429009CB7A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5370F6E522FEC6C9009CB7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5370F6EE22FEC6C9009CB7A6 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +298,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5370F6E322FEC6C9009CB7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5370F6EB22FEC6C9009CB7A6 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5370F6F122FEC6C9009CB7A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5370F6E622FEC6C9009CB7A6 /* Share Extension */;
+			targetProxy = 5370F6F022FEC6C9009CB7A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5370F6D322FEC429009CB7A6 /* Main.storyboard */ = {
@@ -232,6 +331,14 @@
 				5370F6D922FEC42A009CB7A6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5370F6EC22FEC6C9009CB7A6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5370F6ED22FEC6C9009CB7A6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -361,7 +468,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzhoujw.roboNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzhoujw.simpleBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -379,8 +486,44 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzhoujw.roboNews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryzhoujw.simpleBase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5370F6F422FEC6C9009CB7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 793HUB9LD9;
+				INFOPLIST_FILE = "Share Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerryzhoujw.simpleBase.Share-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5370F6F522FEC6C9009CB7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 793HUB9LD9;
+				INFOPLIST_FILE = "Share Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jerryzhoujw.simpleBase.Share-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -402,6 +545,15 @@
 			buildConfigurations = (
 				5370F6E122FEC42A009CB7A6 /* Debug */,
 				5370F6E222FEC42A009CB7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5370F6F322FEC6C9009CB7A6 /* Build configuration list for PBXNativeTarget "Share Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5370F6F422FEC6C9009CB7A6 /* Debug */,
+				5370F6F522FEC6C9009CB7A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
